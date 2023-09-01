@@ -40,7 +40,7 @@ const Details = () => {
             navigate("/")
         else
             dispatch(getMovie(parseInt(id)))
-    }, [id])
+    }, [dispatch, id, navigate])
 
     return (
         <>
